@@ -1,5 +1,6 @@
-package ejemplo_junit;
+package ejemplo_junitTests;
 
+import ejemplo_junit.Test1;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -7,13 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Usuario
- */
-public class Test1Test {
+public class FactorialTest {
     
-    public Test1Test() {
+    public FactorialTest() {
     }
     
     @BeforeClass
@@ -32,18 +29,6 @@ public class Test1Test {
     public void tearDown() {
     }
 
- 
-    @Test
-    public void testMultiplica() {
-        System.out.println("multiplica");
-        int a = 2;
-        int b = 2;
-        Test1 instance = new Test1();
-        int expResult =5 ;
-        int result = instance.multiplica(a, b);
-        assertEquals(expResult, result);
-
-    }
 
     @Test
     public void testFactorial() {
@@ -55,5 +40,5 @@ public class Test1Test {
         assertEquals(expResult, result);
         
     }
-    
+    //Actividad Evaluable Diego Gomez
 }

@@ -1,4 +1,4 @@
-package ejemplo_junit;
+package ejemplo_junitTests;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ejemplo_junit.Test1Test.class, ejemplo_junit.Test2Test2.class})
+@Suite.SuiteClasses(
+       // {FactorialTest.class, MultiplicaTest.class}
+        {Test3Test3Conversor.class, Test4Test4ConversorMoneda.class}
+)
 public class PruebaTestSuite {
 
     @BeforeClass
@@ -27,4 +30,6 @@ public class PruebaTestSuite {
     public void tearDown() throws Exception {
     }
     
+        //Actividad Evaluable Diego Gomez
+
 }
